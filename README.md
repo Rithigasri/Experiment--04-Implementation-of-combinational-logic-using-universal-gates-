@@ -42,11 +42,7 @@ output F;
 wire P,Q,R,S;  
 assign P=(C&~B&A);  
 assign Q=(D&~C&A);  
-<<<<<<< HEAD
 assign R=(~B&C&A);  
-=======
-assign R=(C&~B&A);  
->>>>>>> 298e4e7f5897921294c33e0a5f5f2bb00c14669d
 assign S=~(P|Q|R);  
 not(F,S);  
 endmodule  
