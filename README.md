@@ -41,8 +41,8 @@ input A,B,C,D;
 output F;  
 wire P,Q,R,S;  
 assign P=(C&~B&A);  
-assign Q=(D&~C&A);  
-assign R=(~B&C&A);  
+assign R=(C&~B&A);  
+assign Q=(D&~C&A);   
 assign S=~(P|Q|R);  
 not(F,S);  
 endmodule  
