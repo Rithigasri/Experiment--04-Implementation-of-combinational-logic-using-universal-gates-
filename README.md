@@ -26,25 +26,42 @@ RegisterNumber:  212221230083
 
 VERILOG PROGRAMMING TO IMPLEMENT GIVEN LOGIC FUNCTION USING NAND GATE:  
 module universalgates(A,B,C,D,F);  
+    
 input A,B,C,D;  
+  
 output F;  
+  
 wire P,Q,R;  
+  
 assign P=C&~B&~A;  
+  
 assign Q=D&~C&~A;  
+  
 assign R=~C&B&~A;  
-assign F=(~P&~Q&~R);  
+    
+assign F=(~P&~Q&~R);   
+  
 endmodule  
 
 VERILOG PROGRAMMING TO IMPLEMENT GIVEN LOGIC FUNCTION USING NOR GATE:  
-module ex4(A,B,C,D,F);  
+module ex4(A,B,C,D,F); 
+   
 input A,B,C,D;  
+  
 output F;  
+  
 wire P,Q,R,S;  
+  
 assign P=(C&~B&A);  
+  
 assign R=(C&~B&A);  
+  
 assign Q=(D&~C&A);   
+  
 assign S=~(P|Q|R);  
+  
 not(F,S);  
+  
 endmodule  
 */
 
